@@ -2,9 +2,9 @@ The programs in this folder are for creating a SAS data set of drug products reg
 
 Created by Shenzhen YAO
 Last modified: 2019-12-12
+Copyrights(c) 2019 Shenzhen YAO (see license)
 
-Copyrights: feel free to use, copy, and make adaptation as long as the creator (Shenzhen YAO) is acknowledged, :-). 
- 
+
 System requirement:
 Currently the programs only support the WINDOWS environment:
 Windows 7 or above
