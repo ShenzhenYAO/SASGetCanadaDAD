@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <style>
+        body {
+            font-size:28px;
+        }
+        .title {
+            font-family: 'Source Sans Pro', sans-serif;
+			font-weight:200;
+            font-size: 72px;
+        }
+        p {
+            font-family: 'PT Serif';
+            font-size:28px;
+        }
+        .copyright {
+            font-family: 'monospace';
+            font-weight: bold;
+            font-size:30px;
+        }
+        .copyrighttext {
+            font-family: SFMono-Regliar,Consolas,Liberation Mono,Menlo,monospace;
+            font-size: 20px;
+        }
+        .chapter {
+            font-family: 'Open Sans';
+			font-weight:bold;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <p class='title'>SAS programs to get data from the Drug Product Database of Canada and save as a local SAS data set</p>
+    <p>Created by: Shenzhen YAO <br/>
+        Last modified: 2019-12-12</p>
+    <p>Download files from this site: 
+        <li><a href="getdad.sas">getdad.sas</a></li>
+        <li><a href="supporting.sas">supporting.sas</a></li>
+        <li><a href="getdad.egp">getdad.egp</a></li>
+        <li><a href="readme.md">readme.md</a></li>
+    </p>
+    <p>Or, download files from <a href="https://github.com/ShenzhenYAO/SASGetCanadaDAD" target="_blank">github</a>.</p>
+    
+    <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
+        <p class='chapter'>Introduction</p>
+        <p>The programs in this folder are for creating a SAS data set of drug products registered in Canada. 
+            The target data set is called dad.sas7bdat. 
+            It contians data of the drug product database provided by Health Canada 
+            (<a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html" target="_blank">https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html</a>).</p>
+
+        <p class="chapter">System requirement </p>
+        <p> 
+        <li>Windows 7 or above (currently the programs only support Windows systems</li>
+        <li> SAS 9.4</li> 
+        <li>Enterprise guide 7.1 or above (optional)</li>        
+        <li>At least 1.3 gigabytes of space in the local drive</li>
+        </p>
+
+        <p class="chapter">Installation</p>
+        <p>Create a folder in the local drive (e.g., c:\dadproject)
+        save the two SAS files (i..e, getdad.sas, supporting.sas, and getdad.egp) into the newly created folder.</p>
+        <p class="chapter">Running SAS programs and creating dad.sas7bdat </p
+        <p>The programs will create two subfolders under the newly created project folder. The subfolder 'zips' is where the downloaded zip files will be saved. 
+            The subfolder 'database' is where the final dad.sas7bdat file will be saved. 
+            <strong>Note:</strong> the final dataset is about 1.3 gigabytes in size. Make sure there is enough space on the selected local drive.</p>
+        <ol>
+        <li>
+        <p>Using SAS 9.4:</p>
+        a. In SAS 9.4, find the newly created project folder (e.g., c:\dataproject in installation), and open the file 'getdad.sas'
+        <br/>
+        b. Run the whole program in the file 'getdad.sas'.</p>
+        </li>
+        <li>
+        <p>Using SAS Enterprise 7.1 or above with SAS 9.4:
+        </p>
+        a. In SAS Enterprise, find the newly created project folder (e.g., c:\dataproject in installation), and open the file 'getdad.egp'.
+        <br/>
+        b. Runt the program 'getdad'</p>
+        </li>
+        </ol>
+        <p>Enjoy.</p>
+        </article>
+
+        <p>Download files from this site: 
+            <li><a href="getdad.sas">getdad.sas</a></li>
+            <li><a href="supporting.sas">supporting.sas</a></li>
+            <li><a href="getdad.egp">getdad.egp</a></li>
+            <li><a href="readme.md">readme.md</a></li>
+        </p>
+        <p>Or, download files from <a href="https://github.com/ShenzhenYAO/SASGetCanadaDAD" target="_blank">github</a>.</p>
+        <p class='copyright'>Copyrights(c) 2019 Shenzhen YAO </p>
+        <p class='copyrighttext'>Permission is hereby granted, free of charge, to any person obtaining a copy of this software <br/>
+            and associated documentation files (the "Software"), to deal in the Software without restriction, <br/>
+            including the rights to use, copy, modify, merge, publish, and distribute copies of the <br/>
+            Software (without the permission to sublicense, and/or sell the Software), and to permit <br/>
+            persons to whom the Software is furnished to do so, subject to the following conditions: 
+        </p class='copyrighttext'>
+        <p class='copyrighttext'>    
+            The above copyright notice and this permission notice shall be included in all <br/>
+            copies or substantial portions of the Software.
+        </p>    
+        <p class='copyrighttext'>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR <br/>
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br/>
+            FITNESS FOR A PARTICliAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br/>
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br/>
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br/>
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<br/>
+            SOFTWARE.
+        </p>
+        
+
+</body>
+
+</html>
