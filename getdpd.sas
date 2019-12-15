@@ -1,6 +1,6 @@
 /*
 Creating a SAS data set of drug products registered in Canada. 
-The target data set is called dad.sas7bdat. 
+The target data set is called dpd.sas7bdat. 
 It contians data of the drug product database provided by Health Canada 
 (https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html).
 
@@ -89,7 +89,7 @@ run;
 %downloadPDPFiles;
 /*3. import data from txt files in zips*/
 %importDataFromAllZips;
-/*4. Link all the data sets and make the final database: DAD.sas7bdat*/
+/*4. Link all the data sets and make the final database: dpd.sas7bdat*/
 %LinkAllZips;
 /*5. report the error rows when reading txt files into data sets*/
 Title "Rows that were ignored when reading txt files into data sets";

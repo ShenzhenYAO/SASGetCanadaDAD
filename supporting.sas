@@ -50,7 +50,7 @@
 
 	libname localt "&localDatabasePath";
 
-	data DAD;
+	data dpd;
 		format SRC $3. createDate date9.;	
 		delete;
 	run;	
@@ -74,8 +74,8 @@
 			createDate=date();
 		run;
 
-		data DAD;
-			set DAD LinkAllZips_tmp1;
+		data dpd;
+			set dpd LinkAllZips_tmp1;
 		run;
 
 	%end;
@@ -84,7 +84,7 @@
 		delete LinkAllZips_tmp1;
 	run;
 
-	data localt.DAD; set DAD;run;
+	data localt.dpd; set dpd;run;
 
 %mend  LinkAllZips;
 %macro linkfilesInAZip(zipname_file_surfix=);
