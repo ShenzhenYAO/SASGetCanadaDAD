@@ -86,7 +86,7 @@ run;
 /*1. make input terms of all variables*/
 %MakeInputTermsOfAllFiles;
 /*2. download the zip files*/
-%downloadPDPFiles;
+%downloaddpdFiles;
 /*3. import data from txt files in zips*/
 %importDataFromAllZips;
 /*4. Link all the data sets and make the final database: dpd.sas7bdat*/

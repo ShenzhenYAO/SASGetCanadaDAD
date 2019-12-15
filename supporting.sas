@@ -352,7 +352,7 @@
 
 %mend MakeInputTermsOfAFile;
 
-%macro downloadPDPFiles;
+%macro downloaddpdFiles;
 
 	%local ziplist zipname i;
 	%let ziplist =allfiles allfiles_ia allfiles_ap allfiles_dr;
@@ -379,7 +379,7 @@
 		run;
 	%end;
 
-%mend downloadPDPFiles;
+%mend downloaddpdFiles;
 
 /*Get the path of the current sas program or the current SAS enterprise guide project*/
 %macro getThisPath;
