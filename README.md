@@ -23,11 +23,15 @@ Create a folder in the local drive (e.g., c:\dadproject). Save the two SAS files
 Running SAS programs and creating dad.sas7bdat:
 
 1. Using SAS 9.4:
+
 a. In SAS 9.4, find the newly created project folder (e.g., c:\dataproject in installation), and open the file 'getdad.sas'
+
 b. Run the whole program in the file 'getdad.sas'.
 
 2. Using SAS Enterprise 7.1 or above with SAS 9.4:
+
 a. In SAS Enterprise, find the newly created project folder (e.g., c:\dataproject in installation), and open the file 'getdad.egp'.
+
 b. Runt the program 'getdad'
 
 The programs will create two subfolders under the newly created project folder. The subfolder 'zips' is where the downloaded zip files will be saved. The subfolder 'database' is where the final dad.sas7bdat file will be saved. Note: the final dataset is about 1.3 gigabytes, so make sure there is enough space on the selected local drive. 
