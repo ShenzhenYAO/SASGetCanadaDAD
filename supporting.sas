@@ -740,11 +740,12 @@ VET_SPECIES VARCHAR2(50)
 VET_SUB_SPECIES VARCHAR2(40)
 VET_SPECIES_F VARCHAR2(50)
 ;
+/*rename the columns of DIN, brand name, history date, so that they won't be duplciated with the same columns in other files*/
 data inactiveCol_raw;
  input name :$100. type :$100.;
  cards;
 DRUG_CODE NUMBER(8)
-DRUG_IDENTIFICATION_NUMBER VARCHAR2(29)
-BRAND_NAME VARCHAR2(200)
-HISTORY_DATE DATE
+DRUG_IDENTIFICATION_NUMBER_IA VARCHAR2(29)
+BRAND_NAME_IA VARCHAR2(200)
+HISTORY_DATE_IA DATE
 ;
