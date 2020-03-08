@@ -41,7 +41,7 @@ if (currentURL.startsWith("http://localhost:")){
     }
     embedvideohowtouse(videoURL)
 
-    Disclaim
+    // Disclaim
     d3body.append('p')
         .append('b')
         .styles({
@@ -56,7 +56,7 @@ if (currentURL.startsWith("http://localhost:")){
             'font-weight':"normal",
             'font-size': "12px"
         })
-        .text("NOTE: All the software programs (not including the SAS programs) in the branches other than the 'MASTER' (OTHER SOFTWARE PROGRMS) are reserved.Users can use OTHER SOFTWARE PROGRMS to view tree diagram in webpages. Users are not permitted to down, copy, modify, merge, publish, or distribute these OTHER SOFTWARE PROGRMS. THE SAS PROGRAMS IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.");
+        .text("All the software programs (not including the SAS programs) in the branches other than the 'MASTER' (OTHER SOFTWARE PROGRMS) are reserved.Users can use OTHER SOFTWARE PROGRMS to view tree diagram in webpages. Users are not permitted to down, copy, modify, merge, publish, or distribute these OTHER SOFTWARE PROGRMS. THE SAS PROGRAMS IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.");
 
 
 }
