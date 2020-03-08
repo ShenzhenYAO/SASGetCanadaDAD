@@ -375,6 +375,13 @@
 		%let zipname = %scan(&ziplist, &i);
 		%put >>> the current zipname is &zipname;
 		filename target "&localZipsPath.\&zipname..zip";
+		/*the URL var is defined in the main program
+			it is comprised of a fixed string and a var &zipname:
+			%let URL = https://.../&zipname..zip;
+			despite that URL was only defined once, its value changes corresponding to the value in &zipname
+			So in this loop, each time the URL value will be different depending on the vallue of the var &zipname
+		*/
+		%put >>> the URL is: &URL;
 		proc http  url="&URL"  method="get" out=target; 
 		run;
 	%end;

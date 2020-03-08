@@ -1,7 +1,7 @@
 /*
 Creating a SAS data set of drug products registered in Canada. 
 The target data set is called dpd.sas7bdat. 
-It contians data of the drug product database provided by Health Canada 
+It contains data of the drug product database provided by Health Canada 
 (https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html).
 
 Created by Shenzhen YAO
@@ -33,7 +33,7 @@ Copyrights: feel free to use, copy, and make adaptation as long as the creator (
 													)
 											);
 	/**/
-	/*%put >>> &thisprogramNameFullPath;*/
+	/*%put >>> &thisprogramNamePath;*/
 	/*%put >>> &thisprogramName;*/
 	/*%put >>> &thisprogramPath;*/
 
