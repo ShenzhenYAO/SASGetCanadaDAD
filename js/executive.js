@@ -30,7 +30,7 @@ if (currentURL.startsWith("http://localhost:")){
 //         .text('How to view the diagram? Watch it.')
 
     //Embedded youtube video 
-    var videoURL= "https://youtu.be/CjTDVCnoRdM"; 
+    var videoURL= "https://www.youtube.com/embed/CjTDVCnoRdM"; 
     function embedvideohowtouse (videoURL){
         var iframe = document.createElement('iframe');
         iframe.frameBorder = "0"; 
