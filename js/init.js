@@ -1,40 +1,5 @@
 /**initiation and settings */
 
-/**javascript is sometimes stupid and awkward.
- * 
- * For example, to make programs well arranged, the files should be arrange as that:
- * 1. a master or executive js is loaded by index.html. The master js file only contains pithy lines. 
- * (e.g., 
- *  addtitledesc(); 
- *  loadjson(); etc
- * )
- *       
- * 2. components to run in the executive (e.g. function addtitledesc(){...}, function loadjson(){..}) are saved in a 
- * separated file (e.g. components.js)
- * 
- * Ideally components.js should be loaded by the executive.js. However, loading an external js into the current js 
- * is complicated; therefore js files are usually all loaded in the index.html. In the above example, the
- * components.js should be loaded first, followed by the executive.js. If the executive.js were loaded in the first
- * place, the system won't know what to refer to for components like addtitledesc().
- * 
- * Now the question is: where shall the initial settings (e.g., var treejosnURL='data/Treedata.json') be placed?
- * They should not be placed in the components.js, as it is sort of high-level or executive settings, whereas components.js
- *  is supposed to contain individual models. 
- * Nor should they be placed into the executive.js, as they must be defined prior to loading of the components.js. 
- * 
- *  
- * Things could be hairwire for such bad design of javascript. In this example, one has to make shift and add
- *  another js file (e.g., init.js) to hold such initial settings. 
- * 
- * As such, a simple task like this will cost 3 inidividual js files. Now I understand why packages like 
- *  Angular is so complicated. It has to be, as javascript is, like I said, stupid and awkward! 
- *
- * JS structure in this project (100B02) is exactly the victim of such bad design. Three js files are loaded
- *  in index.html, namely init.js, components.js, and executive.js (in that order). The logic is 
- *  1) define vars and make settings in init.js
- *  2) define functions in components.js
- *  3) write lines to run functions in executive.js
- * /
 
 /**global vars */
 var currentURL =  window.location.href
