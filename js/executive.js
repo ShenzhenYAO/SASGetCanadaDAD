@@ -4,57 +4,57 @@
 
 var d3body=d3.select('body');
 var currentURL = window.location.href
-if (currentURL.startsWith("http://localhost:")){
+// if (currentURL.startsWith("http://localhost:")){
     var titletext='D3 try ' + currentURL;
     var gitcommitver = gitcommitversion;
     var githuburl ="https://github.com/ShenzhenYAO/simple_d3tree_v3tov4.io";
     addtitledesc (titletext, gitcommitver, githuburl)
 
-} else {
-    var titletext=sessionStorage.getItem('thejsonstrname');
-    //remove epg.json
-    titletext= titletext.replace(' egp', '')
-    titletext= titletext.replace('.json', '')
-    var gitcommitver = gitcommitversion;
-    addtitledesc (titletext, gitcommitver, githuburl)
+// } else {
+//     var titletext=sessionStorage.getItem('thejsonstrname');
+//     //remove epg.json
+//     titletext= titletext.replace(' egp', '')
+//     titletext= titletext.replace('.json', '')
+//     var gitcommitver = gitcommitversion;
+//     addtitledesc (titletext, gitcommitver, githuburl)
 
-    // How to view the diagram? Watch it
-    d3body.append('p')
-        .styles({'font-size': '20px', 'font-weight': 'normal', 'font-family': "Georgia"})
-        .text('How to view the diagram? Watch it.')
+//     // How to view the diagram? Watch it
+//     d3body.append('p')
+//         .styles({'font-size': '20px', 'font-weight': 'normal', 'font-family': "Georgia"})
+//         .text('How to view the diagram? Watch it.')
 
-    //Embedded youtube video 
-    // var videoURL='https://www.youtube.com/embed/rMzxW6R2Eno';
-    var videoURL= "https://www.youtube.com/embed/p5cOh6Q10w4"; 
-    function embedvideohowtouse (videoURL){
-        var iframe = document.createElement('iframe');
-        iframe.frameBorder = "0"; 
-        iframe.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-        iframe.src = videoURL;
-        iframe.allowFullscreen = 'true';
-        document.body.appendChild(iframe);
-    }
-    embedvideohowtouse(videoURL)
+//     //Embedded youtube video 
+//     // var videoURL='https://www.youtube.com/embed/rMzxW6R2Eno';
+//     var videoURL= "https://www.youtube.com/embed/p5cOh6Q10w4"; 
+//     function embedvideohowtouse (videoURL){
+//         var iframe = document.createElement('iframe');
+//         iframe.frameBorder = "0"; 
+//         iframe.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+//         iframe.src = videoURL;
+//         iframe.allowFullscreen = 'true';
+//         document.body.appendChild(iframe);
+//     }
+//     embedvideohowtouse(videoURL)
 
-    //Disclaim
-    d3body.append('p')
-        .append('b')
-        .styles({
-            // 'font-family': "monospace",
-            'font-weight':"bold",
-            'font-size': "15px"
-        })
-        .text('Confidentiality Notice:')
-        .append('b')
-        .styles({
-            'font-family': "SFMono-Regliar,Consolas,Liberation Mono,Menlo,monospace",
-            'font-weight':"normal",
-            'font-size': "12px"
-        })
-        .text('  information on this page is for the sole use of the intended recipient(s) with explicit consent from the author Shenzhen YAO. Any unauthorized review, use, disclosure, or distribution is strictly prohibited.');
+//     //Disclaim
+//     d3body.append('p')
+//         .append('b')
+//         .styles({
+//             // 'font-family': "monospace",
+//             'font-weight':"bold",
+//             'font-size': "15px"
+//         })
+//         .text('Confidentiality Notice:')
+//         .append('b')
+//         .styles({
+//             'font-family': "SFMono-Regliar,Consolas,Liberation Mono,Menlo,monospace",
+//             'font-weight':"normal",
+//             'font-size': "12px"
+//         })
+//         .text('  information on this page is for the sole use of the intended recipient(s) with explicit consent from the author Shenzhen YAO. Any unauthorized review, use, disclosure, or distribution is strictly prohibited.');
 
 
-}
+// }
 
 
 
