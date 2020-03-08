@@ -4,13 +4,19 @@
 
 var d3body=d3.select('body');
 var currentURL = window.location.href
-// if (currentURL.startsWith("http://localhost:")){
+if (currentURL.startsWith("http://localhost:")){
     var titletext='D3 try ' + currentURL;
     var gitcommitver = gitcommitversion;
     var githuburl ="https://github.com/ShenzhenYAO/simple_d3tree_v3tov4.io";
     addtitledesc (titletext, gitcommitver, githuburl)
 
-// } else {
+} else {
+
+    var titletext='D3 try ' + currentURL;
+    var gitcommitver = gitcommitversion;
+    var githuburl ="https://github.com/ShenzhenYAO/simple_d3tree_v3tov4.io";
+    addtitledesc (titletext, gitcommitver, githuburl)
+
 //     var titletext=sessionStorage.getItem('thejsonstrname');
 //     //remove epg.json
 //     titletext= titletext.replace(' egp', '')
@@ -54,7 +60,7 @@ var currentURL = window.location.href
 //         .text('  information on this page is for the sole use of the intended recipient(s) with explicit consent from the author Shenzhen YAO. Any unauthorized review, use, disclosure, or distribution is strictly prohibited.');
 
 
-// }
+}
 
 
 
@@ -295,17 +301,17 @@ function makeSvgRectGTree(){
     
 
     //when running on local host:
-    if (currentURL.startsWith("http://localhost:")){
+    // if (currentURL.startsWith("http://localhost:")){
 
         // load the default tree data stored in the data folder (which is set in init.js)
         newTreebyJsonfromURL(treejsonURL)
 
-    } else {
-        //when running online, load the default json either from workaround (on netlify) or from a json str hidden in PHP
-        var loadedjsonstr = sessionStorage.getItem("thejsonstr");
-        treeData = JSON.parse(loadedjsonstr)
-        NewTree (treeData)
-    }
+    // } else {
+    //     //when running online, load the default json either from workaround (on netlify) or from a json str hidden in PHP
+    //     var loadedjsonstr = sessionStorage.getItem("thejsonstr");
+    //     treeData = JSON.parse(loadedjsonstr)
+    //     NewTree (treeData)
+    // }
 
     // // the following illustrates the timing of loading json, making tree, and the value of treeData, and root data point 
     // // initially it cannot be seen because of the asynchoronous settings.
