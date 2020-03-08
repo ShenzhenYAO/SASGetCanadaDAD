@@ -12,10 +12,10 @@ if (currentURL.startsWith("http://localhost:")){
 
 } else {
 
-    var titletext='';
-    var gitcommitver = '';
-    var githuburl ="";
-    addtitledesc (titletext, gitcommitver, githuburl)
+    // var titletext='';
+    // var gitcommitver = '';
+    // var githuburl ="";
+    // addtitledesc (titletext, gitcommitver, githuburl)
 
 //     var titletext=sessionStorage.getItem('thejsonstrname');
 //     //remove epg.json
