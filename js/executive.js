@@ -12,9 +12,9 @@ if (currentURL.startsWith("http://localhost:")){
 
 } else {
 
-    var titletext='D3 try ' + currentURL;
-    var gitcommitver = gitcommitversion;
-    var githuburl ="https://github.com/ShenzhenYAO/simple_d3tree_v3tov4.io";
+    var titletext='';
+    var gitcommitver = '';
+    var githuburl ="";
     addtitledesc (titletext, gitcommitver, githuburl)
 
 //     var titletext=sessionStorage.getItem('thejsonstrname');
