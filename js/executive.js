@@ -51,6 +51,7 @@ if (currentURL.startsWith("http://localhost:")){
         })
         .text('Copyright (c) 2019-2020 Shenzhen YAO')
         .append('b')
+        .append('b')
         .styles({
             'font-family': "SFMono-Regliar,Consolas,Liberation Mono,Menlo,monospace",
             'font-weight':"normal",
